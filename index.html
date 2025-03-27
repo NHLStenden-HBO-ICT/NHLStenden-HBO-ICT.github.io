@@ -45,7 +45,7 @@
                 return { name, time: parseFloat(time), speedup: baseline / time };
             });
             
-            scores.sort((a, b) => b.speedup - a.speedup); // Sort by speedup descending
+            scores.sort((a, b) =< b.time - a.time); // Sort by time ascending
             displayScores(scores);
         }
         
