@@ -2,3 +2,4 @@ periode-3-optimization-team-2-meindert,432629,0.118044,10.2868
 periode-3-optimization-2-3sw,254268,0.200848,25.2639
 periode-3-optimization-python-c,66695.5,0.765708,90.2203
 periode-3-optimization-name,48900.9,122.212,117.384
+periode-3-optimization-groep-groep,228624,15.1065,21.0274
