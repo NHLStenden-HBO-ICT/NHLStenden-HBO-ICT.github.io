@@ -5,67 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Scoreboard</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; }
-        table { width: 50%; margin: auto; border-collapse: collapse; }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #C4E2EC;
+            background-image: url("frieren_up.jpg");
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            background-size: 350px;
+            background-attachment: fixed;
+            margin: 0;
+        }
+        table {
+            width: 100%;
+            margin:auto;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+        }
         th, td { border: 1px solid black; padding: 8px; }
         th { background-color: #f2f2f2; }
+        /* container keeps content centered */
+        .container {
+            max-width: 900px;
+            margin: 80px auto;
+            text-align: center;
+        }
+        .gold {
+            background-color: #ffd700;
+            font-weight: bold;
+        }
+        .silver {
+            background-color: #c0c0c0;
+            font-weight: bold;
+        }
+        .bronze {
+            background-color: #cd7f32;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
-    <h1>Optimization speedup ranking</h1>
-    <table id="scoreboard">
-        <thead>
-            <tr>
-                <th>Rank</th>
-                <th>Name</th>
-                <th>Time</th>
-                <th>Speedup</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
-    <script>
-        const SCORE_URL = 'https://raw.githubusercontent.com/NHLStenden-HBO-ICT/NHLStenden-HBO-ICT.github.io/refs/heads/main/ranking.txt';
-        
-        async function fetchScores() {
-            try {
-                const response = await fetch(SCORE_URL, { cache: 'no-cache' });
-                if (!response.ok) throw new Error('Failed to load scores');
-                const text = await response.text();
-                parseScores(text);
-            } catch (error) {
-                console.error('Error fetching scores:', error);
+    <div class="container">
+        <h1>Optimization speedup ranking</h1>
+        <table id="scoreboard">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Time</th>
+                    <th>Speedup</th>
+                    <th>FPS</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <script>
+            const SCORE_URL = 'https://raw.githubusercontent.com/NHLStenden-HBO-ICT/NHLStenden-HBO-ICT.github.io/refs/heads/main/ranking.txt';
+
+            async function fetchScores() {
+                try {
+                    const response = await fetch(SCORE_URL, { cache: 'no-cache' });
+                    if (!response.ok) throw new Error('Failed to load scores');
+                    const text = await response.text();
+                    parseScores(text);
+                } catch (error) {
+                    console.error('Error fetching scores:', error);
+                }
             }
-        }
-        
-        function parseScores(text) {
-            const lines = text.trim().split('\n');
-            let scores = lines.map(line => {
-                const [name, time, baseline] = line.split(',');
-                return { name, time: parseFloat(time), speedup: baseline / time };
-            });
-            
-            scores.sort((a, b) => a.time - b.time);
-            displayScores(scores);
-        }
-        
-        function displayScores(scores) {
-            const tbody = document.querySelector('#scoreboard tbody');
-            tbody.innerHTML = '';
-            scores.forEach((entry, index) => {
-                const row = `<tr>
-                    <td>${index + 1}</td>
-                    <td>${entry.name}</td>
-                    <td>${entry.time.toFixed(2)}</td>
-                    <td>${entry.speedup.toFixed(2)}</td>
-                </tr>`;
-                tbody.innerHTML += row;
-            });
-        }
-        
-        // Auto refresh every 30 seconds
-        setInterval(fetchScores, 30000);
-        fetchScores(); // Initial load
-    </script>
+
+            function parseScores(text) {
+                const baseline = 1680000
+                const lines = text.trim().split('\n');
+                let scores = lines.map(line => {
+                    const [name, time, s, fps] = line.split(',');
+                    return { name, time: parseFloat(time), speedup: baseline / time, fps: parseFloat(fps) };
+                });
+
+                scores.sort((a, b) => a.time - b.time);
+                displayScores(scores);
+            }
+
+            function displayScores(scores) {
+                const tbody = document.querySelector('#scoreboard tbody');
+                tbody.innerHTML = '';
+                scores.forEach((entry, index) => {
+
+                    if (index === 0) rankClass = "gold";
+                    else if (index === 1) rankClass = "silver";
+                    else if (index === 2) rankClass = "bronze";
+
+                    const row = `<tr class="${rankClass}">
+                                    <td>${index + 1}</td>
+                                    <td>${entry.name}</td>
+                                    <td>${entry.time.toFixed(0) + 'ms'}</td>
+                                    <td>${entry.speedup.toFixed(2)}</td>
+                                    <td>${entry.fps.toFixed(2)}</td>
+                                </tr>`;
+                    tbody.innerHTML += row;
+                });
+            }
+
+            // Auto refresh every 30 seconds
+            setInterval(fetchScores, 30000);
+            fetchScores(); // Initial load
+        </script>
+    </div>
 </body>
 </html>
