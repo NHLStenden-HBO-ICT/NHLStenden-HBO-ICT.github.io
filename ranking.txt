@@ -1,1 +1,2 @@
 periode-3-test,432629,0.118044,10.2869
+periode-3-optimization-GTMeijer,2769.16,18.4422,11924.4
