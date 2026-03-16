@@ -1,2 +1,1 @@
-periode-3-test,432629,0.118044,10.2869
-periode-3-optimization-GTMeijer,1697990,1.0,3.587194
+Baseline,1697990,1.0,3.587194
