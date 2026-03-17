@@ -4,3 +4,4 @@ periode-3-optimization-koekblikje,400893,0.127389,12.5331
 periode-3-optimization-kirsten1999-2,457345,3.92754,10.6287
 periode-3-optimization-CookieMonsterXL,453746,0.11255,11.8511
 periode-3-optimization-NietTeDoen,369816,0.138094,16.9944
+periode-3-optimization-dutchie031,227080,0.683437,32.2492
