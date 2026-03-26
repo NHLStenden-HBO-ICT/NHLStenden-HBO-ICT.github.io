@@ -1,6 +1,6 @@
 Baseline,1.69799e+06,1,3.58719
 periode-3-optimization-mr-matthias1829,82975.7,0.615473,63.9911
-periode-3-optimization-koekblikje,154769,0.329971,65.3681
+periode-3-optimization-koekblikje,78093.9,0.653948,77.511
 periode-3-optimization-kirsten1999-2,457345,3.92754,10.6287
 periode-3-optimization-CookieMonsterXL,204130,0.25018,30.7805
 periode-3-optimization-NietTeDoen,223932,0.228058,28.136
