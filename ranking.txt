@@ -5,5 +5,5 @@ periode-3-optimization-kirsten1999-2,457345,3.92754,10.6287
 periode-3-optimization-CookieMonsterXL,204130,0.25018,30.7805
 periode-3-optimization-NietTeDoen,223932,0.228058,28.136
 periode-3-optimization-dutchie031,76537.7,2.02769,145.756
-periode-3-optimization-SvenTerpstra,238506,0.214122,26.5505
+periode-3-optimization-SvenTerpstra,229969,0.222071,26.7945
 periode-3-optimization-KiraKiwiPizza,1.69455e+06,0.030137,3.56066
