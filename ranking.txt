@@ -3,7 +3,7 @@ periode-3-optimization-mr-matthias1829,82975.7,0.615473,63.9911
 periode-3-optimization-koekblikje,71595.5,0.713303,85.1611
 periode-3-optimization-kirsten1999-2,457345,3.92754,10.6287
 periode-3-optimization-CookieMonsterXL,196179,0.26032,31.6465
-periode-3-optimization-NietTeDoen,223932,0.228058,28.136
+periode-3-optimization-NietTeDoen,222863,0.229151,27.5203
 periode-3-optimization-dutchie031,76537.7,2.02769,145.756
 periode-3-optimization-SvenTerpstra,75508.3,0.676341,80.7492
 periode-3-optimization-KiraKiwiPizza,1.69455e+06,0.030137,3.56066
