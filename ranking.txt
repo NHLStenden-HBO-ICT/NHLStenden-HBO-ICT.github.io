@@ -9,3 +9,4 @@ periode-3-optimization-SvenTerpstra,75508.3,0.676341,80.7492
 periode-3-optimization-KiraKiwiPizza,1.69455e+06,0.030137,3.56066
 periode-3-optimization-sandje05,51286.7,0.995761,130.271
 periode-3-optimization-Kxrst,119265,0.428199,33.5472
+periode-3-optimization-Kryptiiq,78577.7,0.649921,74.9917
