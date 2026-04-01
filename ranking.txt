@@ -15,3 +15,4 @@ periode-3-optimization-sandje05,34521.7,1.47934,202.946
 periode-3-optimization-ScriptSparrow,40117.8,1.27298,135.475
 periode-3-optimization-SvenHiemstra1,58061.6,0.879571,107.191
 periode-3-optimization-thijs-ten-hoeve,330035,4.63272,19.9121
+periode-3-optimization-jordinxd,250663,0.203737,20.9037
