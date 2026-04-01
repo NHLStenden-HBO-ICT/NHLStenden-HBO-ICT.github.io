@@ -13,4 +13,4 @@ periode-3-optimization-Odshan,48526.7,1.0524,124.279
 periode-3-optimization-RickDeBaaser,252209,0.202488,27.9207
 periode-3-optimization-sandje05,34521.7,1.47934,202.946
 periode-3-optimization-ScriptSparrow,224512,0.227468,26.9404
-periode-3-optimization-SvenHiemstra1,60553.3,0.843379,102.833
+periode-3-optimization-SvenHiemstra1,60454.6,0.844755,103.298
