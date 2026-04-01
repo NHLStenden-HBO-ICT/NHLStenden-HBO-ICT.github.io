@@ -12,6 +12,6 @@ periode-3-optimization-Kryptiiq,78577.7,0.649921,74.9917
 periode-3-optimization-Odshan,38042.5,1.34243,149.074
 periode-3-optimization-RickDeBaaser,252209,0.202488,27.9207
 periode-3-optimization-sandje05,34521.7,1.47934,202.946
-periode-3-optimization-ScriptSparrow,49662,1.02834,108.033
+periode-3-optimization-ScriptSparrow,40117.8,1.27298,135.475
 periode-3-optimization-SvenHiemstra1,60454.6,0.844755,103.298
 periode-3-optimization-thijs-ten-hoeve,330035,4.63272,19.9121
