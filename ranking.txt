@@ -16,6 +16,4 @@ periode-3-optimization-ScriptSparrow,40117.8,1.27298,135.475
 periode-3-optimization-SvenHiemstra1,58015.8,0.880266,107.395
 periode-3-optimization-thijs-ten-hoeve,232676,6.5712,28.9898
 periode-3-optimization-jordinxd,250663,0.203737,20.9037
-Odshan,37536.9,1.36051,149.477
-Odshan_Oeps_Dat_Was_Niet_De_Bedoeling_Sorry_:(,37475.5,1.36274,149.634
 periode-3-optimization-kkWicket,54249.7,0.698275,100.448
